@@ -43,4 +43,6 @@ footer {
 .twitter img {
   width: 10%;
   height: 10%;
+  display: grid;
+  grid-template-areas: "a a a";
 }
