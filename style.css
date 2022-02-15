@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Space+Mono:ital@1&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
+
 header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  text-align: center;
+}
+
+header div {
+  text-align: center;
 }
 
 nav {
@@ -18,11 +25,11 @@ nav {
 }
 
 h1 {
-  text-align: center;
+  text-align: start;
   border: 3px solid rebeccapurple;
-  background-color: bisque;
+  color: black;
+  font-family: "Space Mono", monospace;
 }
-
 p {
   text-align: center;
   border: 3px solid blue;
@@ -37,12 +44,19 @@ footer {
   margin-right: 1%;
 }
 
-.twitter {
+footer div {
+  text-align: center;
 }
 
-.twitter img {
-  width: 10%;
-  height: 10%;
+.social {
   display: grid;
-  grid-template-areas: "a a a";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social div {
+  text-align: center;
+}
+
+.social img {
+  width: 40%;
 }
