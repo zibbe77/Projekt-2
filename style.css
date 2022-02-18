@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Space+Mono:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
+  background-color: #f5f5f5;
 }
 
 header {
@@ -9,10 +11,22 @@ header {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   text-align: center;
+  background-color: rgb(230, 230, 230);
 }
 
 header div {
   text-align: center;
+  background-color: rgb(230, 230, 230);
+}
+
+header div img {
+  background-color: rgb(230, 230, 230);
+  border-bottom: solid transparent;
+  transition: border-bottom 0.4s;
+}
+
+header div img:hover {
+  border-bottom: solid;
 }
 
 nav {
@@ -24,16 +38,29 @@ nav {
   margin-bottom: 2%;
 }
 
+nav p {
+  border-style: inset;
+  border: 3px solid black;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.5s;
+}
+
+nav p:hover {
+  background-color: rgb(143, 116, 182);
+}
+
 h1 {
   text-align: start;
   border: 3px solid rebeccapurple;
   color: black;
   font-family: "Space Mono", monospace;
+  background-color: rgb(230, 230, 230);
 }
 p {
   text-align: center;
-  border: 3px solid blue;
-  background-color: bisque;
+  border: 3px solid black;
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -42,10 +69,16 @@ footer {
   grid-gap: 1%;
   margin-left: 1%;
   margin-right: 1%;
+  background-color: rgb(230, 230, 230);
 }
 
 footer div {
   text-align: center;
+  background-color: rgb(230, 230, 230);
+}
+
+footer img {
+  background-color: rgb(230, 230, 230);
 }
 
 .social {
@@ -59,4 +92,13 @@ footer div {
 
 .social img {
   width: 40%;
+}
+
+.Contact p {
+  margin-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
