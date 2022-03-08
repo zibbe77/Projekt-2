@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +23,7 @@ header {
   align-items: center;
   text-align: center;
   background-color: rgb(230, 230, 230);
+  margin-bottom: auto;
 }
 
 header div {
@@ -91,6 +96,11 @@ p {
 .mainshop div img {
   width: 80%;
 }
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
+}
 
 footer {
   display: grid;
@@ -99,6 +109,7 @@ footer {
   margin-left: 1%;
   margin-right: 1%;
   background-color: rgb(230, 230, 230);
+  margin-top: auto;
 }
 
 footer p {
