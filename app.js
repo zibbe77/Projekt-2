@@ -1,10 +1,18 @@
 console.log("runing");
 let carts = document.querySelectorAll('.addcart');
 
+
 for(let i = 0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartStorge();
     })
+}
+
+function getItem(){
+    let itemNumbers = localStorage.getItem('item');
+    if(itemNumbers){
+        document.querySelector('.shopping span').textContent = itemNumbers;
+    }
 }
 
 function cartStorge(){
@@ -15,3 +23,5 @@ function cartStorge(){
 
     document.querySelector('.shopping span').textContent = itemNumbers + 1;
 }
+
+getItem();
