@@ -1,6 +1,4 @@
-console.log("runing");
 let carts = document.querySelectorAll('.addcart');
-
 
 for(let i = 0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
@@ -76,4 +74,14 @@ function Purchase(item) {
     }
 }
 
+function displayCart (){
+let cartItem = localStorage.getItem("Stellaris")
+cartItem = parseInt(cartItem);
+let ifCart = document.querySelector(".checkoutmain");
+    if (cartItem && ifCart){
+       console.log(cartItem);
+    }
+}
+
 getItem();
+displayCart();
