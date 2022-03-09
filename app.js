@@ -22,6 +22,11 @@ function cartStorge(){
 }
 
 function Purchase(item) {
+    var itemNumbers = localStorage.getItem(item) || 0;
+    itemNumbers = parseInt(itemNumbers);
+    localStorage.setItem(item, itemNumbers + 1);
+}
+    /*
     switch(item) {
         case 'Stellaris':
             var itemNumbers = localStorage.getItem(item) || 0;
@@ -71,8 +76,10 @@ function Purchase(item) {
 
         default: console.log("item cant be switched: ", item)
             break;
+       
     }
-}
+     */
+
 
 function displayCart (){
 let cartItem = localStorage.getItem("Stellaris")
