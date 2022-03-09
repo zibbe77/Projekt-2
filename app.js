@@ -18,7 +18,6 @@ function getItem(){
 function cartStorge(){
     let itemNumbers = localStorage.getItem('item') || 0;
     itemNumbers = parseInt(itemNumbers);
-    console.log(typeof itemNumbers);
     localStorage.setItem('item', itemNumbers + 1);
 
     document.querySelector('.shopping span').textContent = itemNumbers + 1;
@@ -27,28 +26,49 @@ function cartStorge(){
 function Purchase(item) {
     switch(item) {
         case 'Stellaris':
-
+            var itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
+            break;
+        case 'Manor lords':
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Hollow Knight':
-            
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'DARK SOULS 3':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Lost Ark':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Brawlhalla':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Rust':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Scrap Mechanic':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
         case'Tom Clancys Rainbow Six Siege':
-
+            itemNumbers = localStorage.getItem(item) || 0;
+            itemNumbers = parseInt(itemNumbers);
+            localStorage.setItem(item, itemNumbers + 1);
             break;
 
         default: console.log("item cant be switched: ", item)
